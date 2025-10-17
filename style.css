@@ -73,7 +73,7 @@ body {
     width: 20%;
     height: 50px;
     background-color: white;
-    border: 5px solid wh;
+    border: 5px solid white;
     margin: 5px;
     text-align: center;
     font-size: 25px;
@@ -374,4 +374,5 @@ body {
 
 .ContactUs {
     color: rgb(251, 243, 237);
+
 }
