@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+  transform: scale(1.5);
+  transform-origin: top left;
+  width: 66.67%; 
+}
+
+/* this box regroups logo to man */
+/* 2 divs in a div that contain another divs, use flex to space them, use flex grow for the research bar*/
+.box0 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(103, 201, 186);
+    border: 5px solid rgb(103, 201, 186);
+    display: flex;
+}
+
+.logo {
+    width: 13%;
+    height: 60px;
+    background-color: rgb(103, 201, 186);
+    border: 5px solid rgb(103, 201, 186);
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo1 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border: 5px solid white;
+    margin-bottom: 5px;
+    background-image: url('Vocaloid.logo.png');
+    background-size: cover;
+}
+
+/* 2nd div start here*/
+/*division inside divison, use flex and flex grow to create search bar and what we need*/
+
+.rightbouttons {
+    width: 70%;
+    height: 70px;
+    background-color: rgb(103, 201, 186);
+    border: 5px solid rgb(103, 201, 186);
+    margin-top: 5px;
+    margin-left: 400px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    width: 40%;
+    height: 50px;
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    border-radius: 45px;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Vocaloid', sans-serif;
+}
+
+.sign {
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    border: 5px solid wh;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Vocaloid', sans-serif;
+    border-radius: 10px;
+}
+
+.sign:hover {
+    color: blue;
+}
+
+.man {
+    width: 8%;
+    height: 50px;
+    background-color: white;
+    border: 3px solid black;
+    margin: 5px;
+    border-radius: 50px;
+    background-image: url('Face.jpg');
+    background-size: cover;
+}
+
+/* box 1 regroups boutton to cardback */
+/* the big rectangle is gonna fuse with the top one to form one big rectangle*/
+/* use flex to space them as you wish*/
+/*adjuste the margins if needed*/
+.box1 {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(103, 201, 186);
+    border: 5px solid rgb(103, 201, 186);
+    display: flex;
+
+}
+
+
+.bouton {
+    width: 11%;
+    height: 64px;
+    background-color: white;
+    border: 5px solid black;
+    margin-left: 70px;
+    margin-top: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Vocaloid', sans-serif;
+}
+
+.bouton:hover {
+    color: rgb(189, 4, 4);
+}
+
+.title {
+    width: 25%;
+    height: 200px;
+    background-color: rgb(103, 201, 186);
+    border: 3px solid rgb(103, 201, 186);
+    font-family: 'Vocaloid', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(189, 4, 4);
+}
+
+.cards {
+    font-size: 35px;
+    color: rgb(34, 9, 195);
+}
+
+.cardfront {
+    width: 20%;
+    height: 375px;
+    background-color: white;
+    border: 3px solid rgb(103, 201, 186);
+    margin-left: 120px;
+    border-radius: 20px;
+    background-image: url('IMG_9014.jpeg');
+    background-size: cover;
+}
+
+.cardback {
+    width: 20%;
+    height: 375px;
+    background-color: white;
+    border: 3px solid rgb(103, 201, 186);
+    margin-left: 80px;
+    border-radius: 20px;
+    background-image: url('IMG_9002.jpeg');
+    background-size: cover;
+}
+
+/* yellow part that contain text about whats vocaloid */
+/*simple text zone in a div*/
+.box2 {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(251, 239, 82);
+    border: 5px solid rgb(251, 239, 82);
+    font-family: 'Vocaloid', sans-serif;
+}
+
+/* divs that containe box 3 and textbox3 */
+/*image zone at the left and text zone at the right*/
+
+.boxcontainer1 {
+    width: 100%;
+    height: 305px;
+    background-color: rgb(242, 191, 201);
+    border: 3px solid rgb(242, 191, 201);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 {
+    width: 46%;
+    height: 300px;
+    background-color: white;
+    border: 3px solid rgb(242, 191, 201);
+    margin-bottom: 20px;
+    background-image: url('desktop-wallpaper-vocaloid-backgrounds-vocaloid.jpg');
+    background-size: cover;
+}
+
+/* add text about the purpose of the site */
+
+.textbox3 {
+    width: 53%;
+    height: 300px;
+    background-color: rgb(242, 191, 201);
+    border: 5px solid rgb(242, 191, 201);
+    font-family: 'Vocaloid', sans-serif;
+}
+
+/* divs that containe textbox 4 and box4 */
+/* text zone at the left and image zone at the right*/
+
+.boxcontainer2 {
+    width: 100%;
+    height: 420px;
+    background-color: rgb(242, 191, 201);
+    border: 5px solid rgb(242, 191, 201);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* add text about how the site works*/
+
+.textbox4 {
+    width: 45%;
+    height: 400px;
+    background-color: rgb(242, 191, 201);
+    border: 5px solid rgb(242, 191, 201);
+    font-family: 'Vocaloid', sans-serif;
+}
+
+/*the picture has the same backgroud as the divs*/
+
+.box4 {
+    width: 54%;
+    height: 400px;
+    background-color: rgb(242, 191, 201);
+    border: 5px solid rgb(242, 191, 201);
+    background-image: url('IMG_9018.jpeg');
+    background-size: cover;
+}
+
+/*division in which we weill have 4 cards displayed*/
+.container {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(204, 80, 74);
+    border: 5px solid rgb(204, 80, 74);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* cards border need to be the same color as the background of the divs*/
+/*cards all have the same propreties*/
+
+.card1 {
+    width: 20%;
+    height: 375px;
+    background-color: rgb(204, 80, 74);
+    border: 7px solid rgb(204, 80, 74);
+    border-radius: 20px;
+    margin-top: 110px;
+    background-image: url('IMG_9011.jpeg');
+    background-size: cover;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.card2 {
+    width: 20%;
+    height: 375px;
+    background-color: rgb(204, 80, 74);
+    border: 7px solid rgb(204, 80, 74);
+    border-radius: 20px;
+    margin-top: 110px;
+    background-image: url('IMG_9015.jpeg');
+    background-size: cover;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card3 {
+    width: 20%;
+    height: 375px;
+    background-color: rgb(204, 80, 74);
+    border: 7px solid rgb(204, 80, 74);
+    border-radius: 20px;
+    margin-top: 110px;
+    background-image: url('IMG_9012.jpeg');
+    background-size: cover;
+}
+
+.card3:hover {
+    transform: scale(1.1);
+}
+
+.card4 {
+    width: 20%;
+    height: 375px;
+    background-color: rgb(204, 80, 74);
+    border: 7px solid rgb(204, 80, 74);
+    border-radius: 20px;
+    margin-top: 110px;
+    background-image: url('IMG_9013.jpeg');
+    background-size: cover;
+}
+
+.card4:hover {
+    transform: scale(1.1);
+}
+
+/*last part is footer juste need one divison inside the big div*/
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(63, 101, 197);
+    border: 5px solid rgb(63, 101, 197);
+    font-family: 'Vocaloid', sans-serif;
+    text-align: start;
+}
+
+/*footerbouton is the divison in which i will create 2 other divison for the buton and text zone*/
+.footerboutons {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(63, 101, 197);
+    border: 5px solid rgb(63, 101, 197);
+    display: flex;
+}
+
+.Contact {
+    width: 30%;
+    height: 50px;
+    background-color: white;
+    border: 5px solid whi;
+    border-radius: 10px;
+
+}
+
+.ContactBouton {
+    width: 10%;
+    height: 70px;
+    background-color: white;
+    border: 5px solid black;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Vocaloid', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.ContactBouton:hover {
+    color: rgb(237, 129, 61);
+}
+
+/* change the color of the h1*/
+
+.Vocaloid {
+    color: rgb(1, 212, 143);
+}
+
+.VoCards {
+    color: rgb(174, 46, 90);
+}
+
+.work {
+    color: rgb(94, 88, 88);
+}
+
+.ContactUs {
+    color: rgb(251, 243, 237);
+}
