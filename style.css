@@ -41,6 +41,8 @@ body {
     background-size: cover;
 }
 
+
+
 /* 2nd div start here*/
 /*division inside divison, use flex and flex grow to create search bar and what we need*/
 
@@ -50,7 +52,7 @@ body {
     background-color: rgb(103, 201, 186);
     border: 5px solid rgb(103, 201, 186);
     margin-top: 5px;
-    margin-left: 400px;
+    margin-left: 370px;
     margin-right: 60px;
     display: flex;
     flex-direction: row;
@@ -67,6 +69,7 @@ body {
     text-align: left;
     font-size: 25px;
     font-family: 'Vocaloid', sans-serif;
+    color: black;
 }
 
 .sign {
@@ -79,11 +82,13 @@ body {
     font-size: 25px;
     font-family: 'Vocaloid', sans-serif;
     border-radius: 10px;
+    color: black;
 }
 
 .sign:hover {
     color: blue;
 }
+
 
 .man {
     width: 8%;
@@ -96,10 +101,52 @@ body {
     background-size: cover;
 }
 
+
+.burger {
+    width: 8%;
+    height: 50px;
+    border: 3px solid ;
+    margin: 2px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-image: url('menu-button-three-horizontal-lines-260nw-785528545.webp');
+    background-size: cover;
+    transition: 0.3s;
+    z-index: 2;
+    transform-origin: center;
+}
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 270px;
+    height: 100%;
+    background-color: lightgray;
+    padding: 20px;
+    visibility: hidden;
+    z-index: 1;
+    transition: right 0.3s;
+    visibility: 0.3;
+    font-family: 'Vocaloid', sans-serif;
+}
+
+.open {
+    right: 0px;
+    visibility: visible;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
 /* box 1 regroups boutton to cardback */
 /* the big rectangle is gonna fuse with the top one to form one big rectangle*/
 /* use flex to space them as you wish*/
 /*adjuste the margins if needed*/
+
 .box1 {
     width: 100%;
     height: 400px;
@@ -121,6 +168,7 @@ body {
     text-align: center;
     font-size: 25px;
     font-family: 'Vocaloid', sans-serif;
+    color: black;
 }
 
 .bouton:hover {
@@ -337,14 +385,14 @@ body {
     width: 30%;
     height: 50px;
     background-color: white;
-    border: 5px solid whi;
+    border: 5px solid white;
     border-radius: 10px;
 
 }
 
 .ContactBouton {
     width: 10%;
-    height: 70px;
+    height: 52px;
     background-color: white;
     border: 5px solid black;
     margin-left: 20px;
@@ -352,6 +400,7 @@ body {
     font-family: 'Vocaloid', sans-serif;
     font-size: 25px;
     border-radius: 10px;
+    color: black;
 }
 
 .ContactBouton:hover {
@@ -374,5 +423,183 @@ body {
 
 .ContactUs {
     color: rgb(251, 243, 237);
-
 }
+
+.lightmode {
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-left: 450px;
+    text-align: center;
+    font-family: 'Vocaloid', sans-serif;
+    font-size: 20px;
+    background-size: cover;
+}
+
+.lightmode:hover {
+    color: rgb(237, 129, 61);
+}
+
+/*darkmode*/
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+/*darkmode + what i need to change*/
+
+.darkmode .footer {
+    background-color: rgb(36, 58, 123);
+    border: 5px solid rgb(36, 58, 123);
+}
+.darkmode .footerboutons {
+    background-color: rgb(36, 58, 123);
+    border: 5px solid rgb(36, 58, 123);
+}
+
+.darkmode .lightmode {
+    background-color: rgb(36, 58, 123);
+    border: 5px solid rgb(36, 58, 123);
+    color: white;
+    border-color: white;
+}
+.darkmode .ContactBouton {
+    background-color: rgb(36, 58, 123);
+    border: 5px solid rgb(36, 58, 123);
+    color: white;
+    border-color: white;
+}
+.darkmode .Contact {
+    background-color: rgb(36, 58, 123);
+    border: 5px solid rgb(36, 58, 123);
+    color: white;
+    border-color: white;
+}
+
+.darkmode .container {
+    background-color: rgb(128, 50, 46);
+    border: 5px solid rgb(128, 50, 46);
+    color: white;
+}
+
+.darkmode .card1{
+    background-color: rgb(128, 50, 46);
+    border: 5px solid rgb(128, 50, 46);
+    color: white;
+}
+
+.darkmode .card2{
+    background-color: rgb(128, 50, 46);
+    border: 5px solid rgb(128, 50, 46);
+    color: white;
+}
+
+.darkmode .card3{
+    background-color: rgb(128, 50, 46);
+    border: 5px solid rgb(128, 50, 46);
+    color: white;
+}
+
+.darkmode .card4{
+    background-color: rgb(128, 50, 46);
+    border: 5px solid rgb(128, 50, 46);
+    color: white;
+}
+
+
+.darkmode .box3{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+}
+
+.darkmode .textbox3{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+}
+
+.darkmode .box4{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+    background-image: url('IMG_9091.jpeg');
+    background-size: cover;
+}
+
+.darkmode .textbox4{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+}
+
+.darkmode .boxcontainer1{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+}
+
+
+.darkmode .boxcontainer2{
+    background-color: rgb(171, 135, 143);
+    border: 5px solid rgb(171, 135, 143);
+    color: white;
+}
+
+.darkmode .box1 {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+.darkmode .box2 {
+    background-color: rgb(163, 155, 53);
+    border: 5px solid rgb(163, 155, 53);
+    color: white;
+}
+
+.darkmode .box0 {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .rightbouttons {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .title {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .cardback {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .cardfront {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .cardback {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
+.darkmode .logo {
+    background-color: rgb(66, 128, 118);
+    border: 5px solid rgb(66, 128, 118);
+    color: white;
+}
+
